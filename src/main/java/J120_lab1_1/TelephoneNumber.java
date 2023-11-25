@@ -8,7 +8,7 @@ public class TelephoneNumber {
     private String localNumber;
 
     public void setRegionCode(String regionCode) {
-        if (regionCode.matches("-?\\d+") && regionCode.length()>=3 && regionCode.length() <=4){
+        if (regionCode.matches("-?\\d{3,4}")){
             this.regionCode = regionCode;
         } else {
             throw new IllegalArgumentException ("Неверный формат кода региона");
@@ -16,7 +16,7 @@ public class TelephoneNumber {
     }
 
     public void setLocalNumber(String localNumber) {
-        if (localNumber.matches("-?\\d+") && localNumber.length() > 5 && localNumber.length() < 8 ) {
+        if (localNumber.matches("-?\\d{6,7}")) {
             this.localNumber = localNumber;
         }else {
             throw new IllegalArgumentException ("Неверный формат номера");

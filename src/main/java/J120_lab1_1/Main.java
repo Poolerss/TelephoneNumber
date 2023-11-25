@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
        TelephoneNumber tel1 = new TelephoneNumber("990", "1028983");
-       TelephoneNumber tel2 = new TelephoneNumber("1909", "562323");
+       TelephoneNumber tel2 = new TelephoneNumber("1899", "562323");
 
         System.out.println("-------Реализация Map ассоциативного массива------------");
         Map<TelephoneNumber, String> contacts = new HashMap<>();
